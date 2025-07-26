@@ -30,6 +30,8 @@ import Check from "../../../public/svgs/Check.svg";
 import CrossRed from "../../../public/svgs/CrossRed.svg";
 
 const MainPrompt = () => {
+
+
   const dispatch = useDispatch();
   const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -406,6 +408,10 @@ const MainPrompt = () => {
               onClick={handleSend}
             />
           </div>
+
+
+
+
         </div>
       </div>
       {modal === "auth" && <Auth isOpen={isOpen} onClose={onClose} />}
